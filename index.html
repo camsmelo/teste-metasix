@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste-Metasix</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="./assets/images/logo.png" alt="Logo Prefeitura Boa Vista" />
+        <img id="modulos" src="./assets/icons/th-solid.svg" alt="Módulos da tela" />
+        <p>Módulos</p>
+        <img id="sign-out" src="./assets/icons/sign-out-alt-solid.svg" alt="Saída da tela" />
+        <p>Sign Out</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#" onclick="fazerRequisicao()">FAQ</a></li>
+            <li><a href="#">LOCAIS</a>
+            <li><a href="#">CATEGORIAS</a>
+        </ul>
+    </nav>
+
+    <form action="">
+        <div class="container">
+            <h1>FAQ - Perguntas Frequentes</h1>
+            <input type="search" id="busca" placeholder="Busque por termo..." />
+            <button id="btnBusca" type="submit"><img id="lupa-busca"
+                src="./assets/icons/search-solid.svg" />BUSCAR</button>
+        </div>
+    </form>
+
+    <table id="tabela">
+        <thead id="inicio-tabela">
+            <tr>
+                <th><p id="pergunta">Pergunta</p><img onclick="fazerRequisicao()" id="nova-pergunta" src="./assets/icons/plus-circle-solid.svg" alt="Mais...">Nova Pergunta</th>
+                <th>Ordem</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+
+        <tbody id="data-table">
+           
+        </tbody>
+    </table>
+
+</body>
+<script src="./js/index.js"></script>
+
+</html>
